@@ -12,7 +12,16 @@ const app = express();
 mongoose.connect(process.env.MONGODB_URI);
 mongoose.connection.on('connected',() =>{
  console.log('Connected to MongoDB')  
-})
+}) 
+// server.js
+
+
+
+
+// Import the Fruit model
+const Fruit = require("./models/fruit.js");
+
+
 
 // server.js
 
